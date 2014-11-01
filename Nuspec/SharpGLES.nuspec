@@ -6,7 +6,7 @@
 		<version>1.0.4</version>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>SharpGLES OpenGL ES 2.0 emulation for Windows Desktop</description>
-		<!--<projectUrl></projectUrl>-->
+		<projectUrl>https://github.com/bitlush/SharpGLES</projectUrl>
 		<authors>Keith Wood</authors>
 		<frameworkAssemblies>
 			<frameworkAssembly assemblyName="System" targetFramework="" />
