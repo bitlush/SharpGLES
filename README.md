@@ -3,6 +3,12 @@ SharpGLES
 
 OpenGL ES 2.0 for .NET Desktop
 
+Use via nuget:
+
+```
+PM> Install-Package SharpGLES
+```
+
 To use in Windows Forms:
 
 ```
