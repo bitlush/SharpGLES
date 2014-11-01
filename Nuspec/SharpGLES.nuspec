@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>SharpGLES</id>
+		<title>SharpGLES</title>
+		<version>1.0.3</version>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>SharpGLES OpenGL ES 2.0 emulation for Windows Desktop</description>
+		<!--<projectUrl></projectUrl>-->
+		<authors>Keith Wood</authors>
+		<frameworkAssemblies>
+			<frameworkAssembly assemblyName="System" targetFramework="" />
+			<frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
+		</frameworkAssemblies>
+	</metadata>
+	<files>
+		<file src="..\SharpGLES\bin\Debug\SharpGLES.dll" target="lib\net40" />
+		<file src="..\Libraries\d3dcompiler_46.dll" target="lib\native" />
+		<file src="..\Libraries\libEGL.dll" target="lib\native" />
+		<file src="..\Libraries\libGLESv2.dll" target="lib\native" />
+		<file src="SharpGLES.targets" target="build" />
+		<file src="readme.txt" target="" />
+	</files>
+</package>

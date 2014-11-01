@@ -1,0 +1,8 @@
+/*.suo
+
+/Nuspec/*.bat
+/Nuspec/*.exe
+/Nuspec/*.nupkg
+/SharpGLES/*.user
+/SharpGLES/obj
+/SharpGLES/bin
