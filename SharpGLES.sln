@@ -1,7 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGLES", "SharpGLES\SharpGLES.csproj", "{CF294894-F871-4CC4-B947-FEED7967A49E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EDBF7291-B298-47A7-973A-FBA62ACE4B9B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuspec", "Nuspec", "{2FB38C8C-8478-4B0A-B2EE-9A7F81B28CE7}"
+	ProjectSection(SolutionItems) = preProject
+		Nuspec\readme.txt = Nuspec\readme.txt
+		Nuspec\SharpGLES.nuspec = Nuspec\SharpGLES.nuspec
+		Nuspec\SharpGLES.targets = Nuspec\SharpGLES.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
