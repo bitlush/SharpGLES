@@ -5,6 +5,7 @@ OpenGL ES 2.0 for .NET Desktop
 
 To use in Windows Forms:
 
+```
 using System;
 using System.Windows.Forms;
 using SharpGLES;
@@ -56,3 +57,4 @@ public partial class GLESForm : Form
 		_display = new EGLDisplay(Handle);
 	}
 }
+```
