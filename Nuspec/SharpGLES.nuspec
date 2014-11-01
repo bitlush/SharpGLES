@@ -8,6 +8,7 @@
 		<description>SharpGLES OpenGL ES 2.0 emulation for Windows Desktop</description>
 		<projectUrl>https://github.com/bitlush/SharpGLES</projectUrl>
 		<authors>Keith Wood</authors>
+		<copyright>Keith Wood</copyright>
 		<frameworkAssemblies>
 			<frameworkAssembly assemblyName="System" targetFramework="" />
 			<frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
