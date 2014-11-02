@@ -65,5 +65,9 @@ public partial class GLESForm : Form
 }
 ```
 
+The GLBuffer<T> class can be used to send data to the likes of GLES20.BufferData etc as it provides an implicit cast to IntPtr and uses an internally pinned array.
+
+To load a .NET image as a texture use the GLUtils.TexImage2D method.
+
 This project uses binaries from Google's angle project (https://code.google.com/p/angleproject/) under the New BSD license which can be read here:
 https://chromium.googlesource.com/angle/angle/+/master/LICENSE
