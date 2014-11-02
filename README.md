@@ -9,6 +9,8 @@ Use via nuget:
 PM> Install-Package SharpGLES
 ```
 
+The are examples in the Examples folder.
+
 To use in Windows Forms:
 
 ```
