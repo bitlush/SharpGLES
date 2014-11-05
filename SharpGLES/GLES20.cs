@@ -368,8 +368,8 @@ namespace SharpGLES
 		[DllImport(Path, EntryPoint = "glClearStencil")]
 		public static extern void ClearStencil(int s);
 
-		[DllImport(Path, EntryPoint = "glColorMas")]
-		public static extern void ColorMas(bool red, bool green, bool blue, bool alpha);
+		[DllImport(Path, EntryPoint = "glColorMask")]
+		public static extern void ColorMask(bool red, bool green, bool blue, bool alpha);
 
 		[DllImport(Path, EntryPoint = "glCompileShader")]
 		public static extern void CompileShader(int shader);

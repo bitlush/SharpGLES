@@ -9,6 +9,11 @@ namespace SharpGLES
 	{
 		public static void TexImage2D(int target, int level, Image image, int border)
 		{
+			TexImage2D(target, level, image, border, false);
+		}
+
+		public static void TexImage2D(int target, int level, Image image, int border, bool preMultiplyAlpha)
+		{
 			PixelFormat format = PixelFormat.Format32bppArgb;
 
 			Bitmap bitmap = new Bitmap(image.Width, image.Height, format);
@@ -29,17 +34,31 @@ namespace SharpGLES
 
 			bitmap.Dispose();
 
-			for (int i = 0; i < buffer.Length; i += 4)
+			if (preMultiplyAlpha)
 			{
-				byte b = buffer[i];
-				//byte g = buffer[i + 1];
-				byte r = buffer[i + 2];
-				//byte a = buffer[i + 3];
+				for (int i = 0; i < buffer.Length; i += 4)
+				{
+					int b = buffer[i];
+					int g = buffer[i + 1];
+					int r = buffer[i + 2];
+					int a = buffer[i + 3];
+				
+					buffer[i] = (byte)(r * a / 256);
+					buffer[i + 1] = (byte)(g * a / 256);
+					buffer[i + 2] = (byte)(b * a / 256);
+					buffer[i + 3] = (byte)a;
+				}
+			}
+			else
+			{
+				for (int i = 0; i < buffer.Length; i += 4)
+				{
+					byte b = buffer[i];
+					byte r = buffer[i + 2];
 
-				buffer[i] = r;
-				//buffer[i + 1] = g;
-				buffer[i + 2] = b;
-				//buffer[i + 3] = a;
+					buffer[i] = r;
+					buffer[i + 2] = b;
+				}
 			}
 
 			GCHandle handle = GCHandle.Alloc(buffer, GCHandleType.Pinned);

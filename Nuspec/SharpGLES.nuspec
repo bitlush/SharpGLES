@@ -3,7 +3,7 @@
 	<metadata>
 		<id>SharpGLES</id>
 		<title>SharpGLES</title>
-		<version>1.0.5</version>
+		<version>1.0.6</version>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>SharpGLES OpenGL ES 2.0 emulation for Windows Desktop</description>
 		<projectUrl>https://github.com/bitlush/SharpGLES</projectUrl>
@@ -13,6 +13,7 @@
 			<frameworkAssembly assemblyName="System" targetFramework="" />
 			<frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
 		</frameworkAssemblies>
+		<releaseNotes>Added support to pre-multiply alpha in the GLUtils.TexImage2D method via an additional method parameter.</releaseNotes>
 	</metadata>
 	<files>
 		<file src="..\SharpGLES\bin\Debug\SharpGLES.dll" target="lib\net40" />

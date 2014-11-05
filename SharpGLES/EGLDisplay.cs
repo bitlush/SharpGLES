@@ -72,7 +72,7 @@ namespace SharpGLES
 				EGL.EGL_DEPTH_SIZE, 24,
 				EGL.EGL_STENCIL_SIZE, 8,
 				EGL.EGL_SAMPLE_BUFFERS, EGL.EGL_DONT_CARE,
-				EGL.EGL_NONE,
+				EGL.EGL_NONE
 			};
 
 			int configCount;
